@@ -67,7 +67,7 @@ class Docker {
             "${
               overrideCommands !== ''
                 ? overrideCommands
-                : `cp /ubuntu-dir/entrypoint.sh /entrypoint.sh ; /entrypoint.sh`
+                : `cp -rf /ubuntu-dir/entrypoint.sh /entrypoint.sh ; /entrypoint.sh`
             }"`;
   }
 
